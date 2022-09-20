@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import "../Menu/menu.css";
 import Mlogo from "../Menu/M-logo.jpg";
 import axios from "axios";
@@ -7,7 +7,8 @@ import axios from "axios";
 
 
 const Menu = () => {
-
+    
+    const history = useHistory();
     const [user, setUser] = useState([]);
 
 
@@ -34,6 +35,7 @@ const Menu = () => {
     const handleClear = () => {
         localStorage.removeItem("auth");
         window.location.reload();
+        history.push("/login");
     };
 
     return (
