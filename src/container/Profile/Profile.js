@@ -21,7 +21,7 @@ const Profile = () => {
 
         const updataData = async () => {
             try {
-                const res = await axios.get(`https://multiverse-ott-platform.herokuapp.com/api/userdetails/id`, {
+                const res = await axios.get(`https://multiverse-ott.onrender.com/api/userdetails/id`, {
                     headers: { auth: `${JSON.parse(localStorage.getItem("auth"))}` }
                 });
                 setuserData(res.data);
