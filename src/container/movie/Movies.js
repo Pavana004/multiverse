@@ -24,7 +24,7 @@ function Movies() {
   
  
   useEffect(() => {
-    const url = "https://multiverse-ott-platform.herokuapp.com/api/allmovies";
+    const url = "https://multiverse-ott.onrender.com/api/allmovies";
     axios.get(url)
       .then(res => {
         setVideos(res.data);
