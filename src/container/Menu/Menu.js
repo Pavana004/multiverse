@@ -35,7 +35,6 @@ const Menu = () => {
     const handleClear = () => {
         localStorage.removeItem("auth");
         history.push("/login");
-        window.location.reload();
     };
 
     return (
