@@ -22,7 +22,7 @@ const Books = () => {
   
   
   useEffect(() => {
-    const url = "https://multiverse-ott-platform.herokuapp.com/api/allbooks";
+    const url = "https://multiverse-ott.onrender.com/api/allbooks";
     axios.get(url)
       .then((res) => {
         setBookUrl(res.data);
