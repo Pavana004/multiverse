@@ -27,7 +27,7 @@ const handleChange = ({ target:{name,value}})=>{
 const handlesubmit = async (evt)=>{
      evt.preventDefault();
      try {
-           const url= "https://multiverse-ott-platform.herokuapp.com/api/login";
+           const url= "https://multiverse-ott.onrender.com/api/login";
            const res = await axios.post(url,log);
            localStorage.setItem("auth",JSON.stringify(res.data));
            history.push("/membership");
