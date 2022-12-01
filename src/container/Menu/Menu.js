@@ -17,7 +17,7 @@ const Menu = () => {
 
         const updataData = async () => {
             try {
-                const res = await axios.get(`https://multiverse-ott-platform.herokuapp.com/api/userdetails/id`, {
+                const res = await axios.get(`https://multiverse-ott.onrender.com/api/userdetails/id`, {
                     headers: { auth: `${JSON.parse(localStorage.getItem("auth"))}` }
                 });
                 setUser(res.data);
@@ -34,8 +34,8 @@ const Menu = () => {
 
     const handleClear = () => {
         localStorage.removeItem("auth");
-        window.location.reload();
         history.push("/login");
+        window.location.reload();
     };
 
     return (
