@@ -13,7 +13,6 @@ const membership = (props) => {
     
     
     const onToken = (token)=>{
-      console.log(token); 
       props.history.push("/menu");
     }
    
