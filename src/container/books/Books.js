@@ -26,7 +26,6 @@ const Books = () => {
     axios.get(url)
       .then((res) => {
         setBookUrl(res.data);
-        console.log(res.data);
 
       })
       .catch((error) => {
