@@ -21,7 +21,7 @@ const Profile = () => {
 
         const updataData = async () => {
             try {
-                const res = await axios.get(`https://multiverse-ott.onrender.com/api/userdetails/id`, {
+                const res = await axios.get(`https://backend-one-tau.vercel.app/api/userdetails/id`, {
                     headers: { auth: `${JSON.parse(localStorage.getItem("auth"))}` }
                 });
                 setuserData(res.data);

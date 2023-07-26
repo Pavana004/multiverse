@@ -26,7 +26,7 @@ const handleChange = ({ target:{name,value}})=>{
 const handlesubmit = async (evt)=>{
      evt.preventDefault();
      try {
-           const url= "https://multiverse-ott.onrender.com/api/register";
+           const url= "https://backend-one-tau.vercel.app/api/register";
            await axios.post(url,reg);
            history.push("/login");
            toast.dark("New User Createded");

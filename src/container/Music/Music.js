@@ -14,7 +14,7 @@ const Music = () => {
 
   useEffect(() => {
 
-    const url = "https://multiverse-ott.onrender.com/api/allMusic";
+    const url = "https://backend-one-tau.vercel.app/api/allMusic";
     axios.get(url)
       .then((res) => {
         setMusic(res.data);

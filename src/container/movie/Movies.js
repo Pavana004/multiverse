@@ -24,7 +24,7 @@ function Movies() {
   
  
   useEffect(() => {
-    const url = "https://multiverse-ott.onrender.com/api/allmovies";
+    const url = "https://backend-one-tau.vercel.app/api/allmovies";
     axios.get(url)
       .then(res => {
         setVideos(res.data);

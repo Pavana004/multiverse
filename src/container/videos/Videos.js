@@ -28,7 +28,7 @@ const Videos = () => {
     //local serve api   
 
     useEffect(() => {
-        axios.get("https://multiverse-ott.onrender.com/api/allalbums").then((res) => setVideoApi(res.data));
+        axios.get("https://backend-one-tau.vercel.app/api/allalbums").then((res) => setVideoApi(res.data));
 
     }, [])
 
